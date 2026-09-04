@@ -108,13 +108,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nuvsha-doc.vercel.app/docs/ui/children</loc>
+    <loc>https://nuvsha.vercel.app/docs/ui/children</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nuvsha-doc.vercel.app/docs/ui/events</loc>
+    <loc>https://nuvsha.vercel.app/docs/ui/events</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
