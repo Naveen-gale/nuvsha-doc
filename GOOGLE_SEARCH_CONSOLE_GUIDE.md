@@ -16,7 +16,7 @@ Your codebase is already prepared with essential technical SEO foundations:
 
 ## Step 1: Deploy Your Website to Vercel
 
-Ensure your latest changes are deployed and you have your live URL (e.g., `https://nuvsha-doc.vercel.app` or your custom domain).
+Ensure your latest changes are deployed and you have your live URL (e.g., `https://nuvsha.vercel.app` or your custom domain).
 
 ```bash
 git add .
@@ -28,7 +28,7 @@ Test that these two URLs load in your browser:
 - `https://<your-domain>/sitemap.xml`
 - `https://<your-domain>/robots.txt`
 
-*(If using a custom domain, replace `nuvsha-doc.vercel.app` in `sitemap.xml` and `robots.txt` with your domain).*
+*(If using a custom domain, replace `nuvsha.vercel.app` in `sitemap.xml` and `robots.txt` with your domain).*
 
 ---
 
@@ -38,10 +38,10 @@ Test that these two URLs load in your browser:
 2. Click the property dropdown (top left) and select **"+ Add property"**.
 3. You will see two options:
    - **Domain** (requires DNS TXT record; best if using your own domain like `nuvsha.dev`).
-   - **URL Prefix** (recommended if using `https://nuvsha-doc.vercel.app`).
+   - **URL Prefix** (recommended if using `https://nuvsha.vercel.app`).
 4. Choose **URL prefix**, enter your exact live URL:
    ```
-   https://nuvsha-doc.vercel.app
+   https://nuvsha.vercel.app
    ```
    *(Ensure you include `https://`)* and click **Continue**.
 
@@ -97,17 +97,17 @@ Once ownership is verified:
 Don't wait weeks for Googlebot to randomly crawl your site:
 1. In the top search bar ("Inspect any URL in..."), paste your homepage URL:
    ```
-   https://nuvsha-doc.vercel.app/
+   https://nuvsha.vercel.app/
    ```
    and press **Enter**.
 2. Google will check the live index. If it shows *"URL is not on Google"*, click:
    - **"Test Live URL"** (confirms Googlebot can fetch and render your React app).
    - **"Request Indexing"**.
 3. Repeat this step for your top key pages:
-   - `https://nuvsha-doc.vercel.app/docs/introduction/what-is-nuvsha`
-   - `https://nuvsha-doc.vercel.app/docs/getting-started/installation`
-   - `https://nuvsha-doc.vercel.app/docs/getting-started/create-project`
-   - `https://nuvsha-doc.vercel.app/docs/language/overview`
+   - `https://nuvsha.vercel.app/docs/introduction/what-is-nuvsha`
+   - `https://nuvsha.vercel.app/docs/getting-started/installation`
+   - `https://nuvsha.vercel.app/docs/getting-started/create-project`
+   - `https://nuvsha.vercel.app/docs/language/overview`
 
 *(Note: Google allows up to 10–15 manual indexing requests per day).*
 
@@ -127,7 +127,7 @@ Developers search for practical questions. Ensure your documentation headings ta
 ### 2. Build High-Quality Developer Backlinks
 Backlinks are one of Google's #1 ranking signals:
 - **GitHub Repository**: Link to your live documentation in the `About` / Website field of `Naveen-gale/nuvsha-doc` and in your main README.
-- **Developer Articles**: Write introductory articles on [Dev.to](https://dev.to), [Hashnode](https://hashnode.com), or [Medium] linking back to `https://nuvsha-doc.vercel.app`.
+- **Developer Articles**: Write introductory articles on [Dev.to](https://dev.to), [Hashnode](https://hashnode.com), or [Medium] linking back to `https://nuvsha.vercel.app`.
 - **Show & Tell Communities**: Share Nuvsha on Reddit (`r/javascript`, `r/webdev`), Product Hunt, and Hacker News (Show HN).
 - **Personal Portfolio / LinkedIn**: Link to Nuvsha from your personal website or social profiles.
 
