@@ -6,17 +6,14 @@ const Home = () => {
         <div className="min-h-screen bg-slate-950 text-slate-300 font-sans flex flex-col">
             <header className="flex flex-col md:flex-row justify-between items-center p-6 border-b border-slate-800 bg-slate-900/50 backdrop-blur-sm gap-4">
                 <div className="flex items-center gap-3">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white font-bold text-2xl shadow-lg shadow-indigo-500/25">n</div>
+                    <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 p-[1.5px] shadow-lg shadow-indigo-500/25 hover:scale-105 transition-transform duration-300">
+                        <img src="/nuvsha.svg" alt="Nuvsha" className="w-full h-full rounded-[10px] object-contain" />
+                    </div>
                     <span className="font-bold text-xl text-white tracking-tight">
                         Nuvsha <span className="ml-2 text-xs font-semibold px-2 py-1 bg-indigo-500/20 text-indigo-400 rounded-full align-middle">v1</span>
                     </span>
                 </div>
-                <div className="text-sm text-slate-400 text-center md:text-right max-w-xl">
-                    <p>
-                        Created by <strong className="text-slate-200">Naveen Galennaver</strong> — Software developer, ML enthusiast, and BCA student from Hubli, India.<br className="hidden md:block" />
-                        Creator of <a href="https://codinginkannada.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-300 hover:underline transition-colors">Coding in Kannada</a>.
-                    </p>
-                </div>
+               
             </header>
 
             <main className="flex-1 flex flex-col items-center justify-center px-4 py-20 bg-slate-950 relative overflow-hidden">
@@ -24,7 +21,12 @@ const Home = () => {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none"></div>
                 
                 <div className="flex flex-col items-center text-center max-w-3xl z-10">
-                    <div className="flex items-center justify-center w-24 h-24 rounded-3xl bg-gradient-to-br from-indigo-500 to-purple-600 text-white font-bold text-6xl shadow-2xl shadow-indigo-500/25 mb-8">n</div>
+                    <div className="relative group mb-8">
+                        <div className="absolute -inset-2 bg-gradient-to-r from-rose-500 via-purple-600 to-indigo-600 rounded-3xl opacity-40 blur-xl group-hover:opacity-70 transition-all duration-700 animate-pulse"></div>
+                        <div className="relative flex items-center justify-center w-24 h-24 rounded-3xl bg-gradient-to-br from-indigo-500 to-purple-600 p-[2.5px] shadow-2xl shadow-indigo-500/25 transition-all duration-300 group-hover:scale-105 group-hover:shadow-indigo-500/50">
+                            <img src="/nuvsha.svg" alt="Nuvsha" className="w-full h-full rounded-[21.5px] object-contain select-none" />
+                        </div>
+                    </div>
                     <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 mb-6 tracking-tight leading-tight">
                         The Nuvsha Programming Language
                     </h1>
@@ -61,6 +63,15 @@ const Home = () => {
                         <p className="text-slate-400 leading-relaxed">Compiled efficiently for maximum runtime performance.</p>
                     </div>
                 </div>
+
+               <footer className="w-full py-6 px-4 flex flex-col items-center md:items-end">
+    <div className="text-sm text-slate-400 text-center md:text-right max-w-xl leading-relaxed">
+        <p>
+            Created by <strong className="text-slate-200">Naveen Galennaver</strong> — Software developer, ML enthusiast, and BCA student from Hubli, India.<br className="hidden md:block" />
+            Creator of <a href="https://codinginkannada.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-indigo-400 hover:text-indigo-300 hover:underline transition-colors">Coding in Kannada</a>.
+        </p>
+    </div>
+</footer>
             </main>
         </div>
     );

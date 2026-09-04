@@ -1,0 +1,91 @@
+<svg viewBox="0 0 200 200" width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="foldLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185">
+        <animate attributeName="stop-color" values="#FB7185;#FDA4AF;#FB7185" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#E11D48">
+        <animate attributeName="stop-color" values="#E11D48;#F43F5E;#E11D48" dur="4s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <linearGradient id="foldDiag" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7">
+        <animate attributeName="stop-color" values="#A855F7;#C084FC;#A855F7" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#6366F1">
+        <animate attributeName="stop-color" values="#6366F1;#818CF8;#6366F1" dur="4s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <linearGradient id="foldRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8">
+        <animate attributeName="stop-color" values="#818CF8;#A5B4FC;#818CF8" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#3B82F6">
+        <animate attributeName="stop-color" values="#3B82F6;#60A5FA;#3B82F6" dur="4s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <filter id="symbolGlow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#818cf8" flood-opacity="0.5" />
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#e11d48" flood-opacity="0.35" />
+    </filter>
+  </defs>
+  <style>
+    @keyframes floatAndPulse {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-4px);
+      }
+    }
+    @keyframes wingLeftMotion {
+      0%, 100% {
+        transform: translateY(0px) scale(1);
+      }
+      50% {
+        transform: translateY(-1.5px) scale(1.02);
+      }
+    }
+    @keyframes wingRightMotion {
+      0%, 100% {
+        transform: translateY(0px) scale(1);
+      }
+      50% {
+        transform: translateY(1.5px) scale(0.98);
+      }
+    }
+    @keyframes centerGlow {
+      0%, 100% {
+        opacity: 0.88;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+    .nuvsha-symbol {
+      animation: floatAndPulse 4s ease-in-out infinite;
+      transform-origin: 100px 100px;
+    }
+    .left-wing {
+      animation: wingLeftMotion 3.5s ease-in-out infinite;
+      transform-origin: 60px 102px;
+    }
+    .right-wing {
+      animation: wingRightMotion 3.5s ease-in-out infinite;
+      transform-origin: 140px 98px;
+    }
+    .center-cross {
+      animation: centerGlow 2.8s ease-in-out infinite;
+    }
+  </style>
+  <rect width="200" height="200" rx="44" fill="#0E0C1B"/>
+  <!-- Animated Symbol -->
+  <g class="nuvsha-symbol" filter="url(#symbolGlow)">
+    <!-- Left Wing -->
+    <polygon class="left-wing" points="46,42 74,58 74,162 46,146" fill="url(#foldLeft)"/>
+    <!-- Isometric Center Cross -->
+    <polygon class="center-cross" points="74,58 126,142 126,162 74,78" fill="url(#foldDiag)" opacity="0.9"/>
+    <!-- Right Wing -->
+    <polygon class="right-wing" points="126,38 154,54 154,158 126,142" fill="url(#foldRight)"/>
+  </g>
+</svg>

@@ -77,8 +77,8 @@ export const Sidebar = () => {
         {/* Header / Logo */}
         <div className="flex items-center justify-between p-4 border-b border-slate-800 h-16 shrink-0">
           <div className={`flex items-center gap-3 overflow-hidden ${isCollapsed && !isMobile ? 'justify-center w-full' : ''}`}>
-            <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 text-white font-bold text-xl shrink-0 shadow-lg shadow-indigo-500/20">
-              N
+            <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-600 p-[1.5px] shrink-0 shadow-lg shadow-indigo-500/20 hover:scale-105 transition-transform duration-300">
+              <img src="/nuvsha.svg" alt="Nuvsha" className="w-full h-full rounded-[6.5px] object-contain" />
             </div>
             {(!isCollapsed || isMobile) && (
               <span className="font-bold text-lg text-white whitespace-nowrap">Nuvsha Docs</span>
