@@ -102,7 +102,10 @@ export const Sidebar = () => {
         </div>
 
         {/* Navigation Links */}
-        <nav className="flex-1 overflow-y-auto py-4 scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent">
+        <nav 
+          className="flex-1 overflow-y-auto py-4 scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-transparent"
+          data-lenis-prevent
+        >
           {sidebarStructure.map((section) => (
             <div key={section.title} className="mb-6 px-3">
               {(!isCollapsed || isMobile) ? (
