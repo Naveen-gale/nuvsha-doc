@@ -81,6 +81,12 @@ export const sidebarStructure = [
     ]
   },
   {
+    title: "Editor Tools",
+    items: [
+      { title: "VS Code Snippets", path: "snippid/snippide" }
+    ]
+  },
+  {
     title: "Advanced",
     items: [
       { title: "Testing Nuvsha", path: "testing/overview" },

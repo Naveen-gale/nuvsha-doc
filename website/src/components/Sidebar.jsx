@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { 
   ChevronLeft, Menu, X, Rocket, LayoutTemplate, 
   Code2, Zap, Layers, TextCursorInput, Route, 
-  Database, Palette, Beaker, BookMarked, FileText
+  Database, Palette, Beaker, BookMarked, FileText, Braces
 } from 'lucide-react';
 import { sidebarStructure } from '../docsMapping';
 
@@ -21,6 +21,7 @@ const getSectionIcon = (title) => {
     case "Routing": return <Route size={20} />;
     case "Data/API": return <Database size={20} />;
     case "Styling": return <Palette size={20} />;
+    case "Editor Tools": return <Braces size={20} />;
     case "Advanced": return <Beaker size={20} />;
     case "Reference": return <BookMarked size={20} />;
     default: return <FileText size={20} />;
